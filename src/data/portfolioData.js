@@ -8,8 +8,28 @@ import img8 from "../assets/images/img-8.png";
 import img9 from "../assets/images/img-9.png";
 import img10 from "../assets/images/img-10.png";
 import img11 from "../assets/images/img-11.png";
+import img12 from "../assets/images/img-12.png";
+import img13 from "../assets/images/img-13.png";
 
 export const projects = [
+  {
+    id: "swish",
+    image: img13,
+    title: "Swish Systems",
+    description:
+      "Swish Systems operates at the exact intersection of high-stakes sports operations and cutting-edge software engineering. We help basketball leagues, facilities, and enterprises optimize workflows, automate administration, and deliver elite digital experiences to players, fans, and management.",
+    tags: ["UI-UX Design", "Web Development"],
+    link: "https://swishsystemsph.com/",
+  },
+  {
+    id: "cary-faith",
+    image: img12,
+    title: "Cary Faith",
+    description:
+      "Cary Faith is a dynamic talent and rising digital personality — captivating audiences on stage, walking the runway in high-fashion campaigns, and connecting with a dedicated following online. She brings authenticity and style to everything she does.",
+    tags: ["UI-UX Design", "Web Development"],
+    link: "https://www.caryfaith.com/",
+  },
   {
     id: "m88-mansion",
     image: img1,
@@ -127,7 +147,15 @@ export const skillGroups = [
   },
   {
     title: "Tools",
-    items: ["Git", "Azure", "GitHub", "Claude AI", "VIDA AI", "CoPilot", "ChatGPT"],
+    items: [
+      "Git",
+      "Azure",
+      "GitHub",
+      "Claude AI",
+      "VIDA AI",
+      "CoPilot",
+      "ChatGPT",
+    ],
   },
 ];
 

@@ -1,9 +1,12 @@
+import logoImage from "../assets/images/logo.png";
+
 const Header = () => {
   return (
     <header>
       <nav className="wrap">
         <a href="#" className="logo">
-          D<span>.</span>Olivar
+          {/* D<span>.</span>Olivar */}
+          <img src={logoImage} alt="Logo" />
         </a>
         <div className="nav-links">
           <a href="#about">About</a>
