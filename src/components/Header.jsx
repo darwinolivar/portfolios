@@ -30,11 +30,8 @@ const Header = () => {
         <a class="site-nav__link" href="#work">
           Work <span>02</span>
         </a>
-        <a class="site-nav__link" href="#skills">
-          Skills <span>03</span>
-        </a>
         <a class="site-nav__link" href="#experience">
-          Experience <span>04</span>
+          Experience <span>03</span>
         </a>
         <a class="site-nav__link site-nav__link--outline" href="#contact">
           Contact Me <span>↗</span>
