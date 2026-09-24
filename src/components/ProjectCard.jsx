@@ -1,38 +1,38 @@
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, index }) => {
   const { image, title, description, tags, link } = project;
 
   return (
-    <article className="project-card fade-in">
-      <div className="project-visual">
-        <div className="mockframe">
-          <div className="mock-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div className="mock-body">
-            <img src={image} alt={title} />
-          </div>
-        </div>
+    <article className="project reveal">
+      <div className="project__media">
+        <img src={image} alt={title} />
+        <span className="project__index">
+          {String(index + 1).padStart(2, "0")}
+        </span>
       </div>
-
-      <div className="project-content">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <div className="tag-row">
-          {tags.map((tag) => (
-            <span className="tag" key={tag}>
-              {tag}
-            </span>
-          ))}
+      <div className="project__body">
+        <div>
+          <h3>{title}</h3>
+          <p>{description}</p>
         </div>
-        {link && (
-          <div className="project-links">
-            <a href={link} target="_blank" rel="noopener noreferrer">
+        <div className="project__meta">
+          <div className="tags">
+            {tags.map((tag) => (
+              <span className="tag" key={tag}>
+                {tag}
+              </span>
+            ))}
+          </div>
+          {link && (
+            <a
+              className="project__link"
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Live Demo →
             </a>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </article>
   );

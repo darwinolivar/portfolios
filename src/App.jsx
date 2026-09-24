@@ -7,18 +7,21 @@ import Experience from "./components/Experience.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import useFadeInOnScroll from "./hooks/useFadeInOnScroll.js";
+import initPortfolioScripts from "./utils/script.js";
+import { useEffect } from "react";
 
 const App = () => {
   useFadeInOnScroll();
 
+  useEffect(() => initPortfolioScripts(), []);
+
   return (
     <>
       <Header />
-      <main>
+      <main id="top">
         <Hero />
         <About />
         <Projects />
-        <Skills />
         <Experience />
         <Contact />
       </main>

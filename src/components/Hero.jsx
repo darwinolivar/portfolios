@@ -2,57 +2,54 @@ import heroPhoto from "../assets/images/photo-no-background.png";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="hero-bg">
-        <div className="grid-layer"></div>
-        <div className="glow"></div>
-        <div className="glow-2"></div>
+    <section class="hero section-grid" aria-labelledby="hero-title">
+      <div class="hero__rail">
+        <span>PORTFOLIO — 2026</span>
+        <span class="hero__rail-line"></span>
       </div>
-      <div className="wrap hero-inner">
-        <div className="fade-in visible">
-          <div className="eyebrow hero-eyebrow">Portfolio — 2026</div>
-          <h1>
-            Darwin
-            <br />
-            Olivar<span className="accent">.</span>
-          </h1>
-          <div className="hero-role">
-            UI/UX Developer
-            <span className="sep">/</span> Frontend Developer
-          </div>
-          <p className="hero-desc">
-            I create thoughtful digital experiences and impactful solutions
-            through creativity, strategy, and technology.
-          </p>
-          <div className="hero-actions">
-            <a href="#work" className="btn btn-primary">
-              View My Work
-            </a>
-            <a href="#contact" className="btn btn-ghost">
-              Contact Me
-            </a>
-          </div>
-        </div>
-
-        <div className="hero-visual fade-in visible">
-          <div className="stack-card c1"></div>
-          <div className="stack-card c2"></div>
-          <div className="stack-card c3">
-            <div className="stack-top">
-              <div className="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div className="stack-tag">designing</div>
-            </div>
-            <img src={heroPhoto} alt="Hero Visual" />
-          </div>
+      <div class="hero__content reveal">
+        <p class="eyebrow hero__eyebrow">
+          UI/UX DEVELOPER <b>/</b> FRONTEND DEVELOPER
+        </p>
+        <h1 class="hero__title" id="hero-title">
+          <span>Darwin</span>
+          <span>
+            Olivar<span class="hero__period">.</span>
+          </span>
+        </h1>
+        <p class="hero__intro">
+          I create thoughtful digital experiences and impactful solutions
+          through creativity, strategy, and technology.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--accent" href="#work">
+            View My Work <span>↓</span>
+          </a>
+          <a class="button button--text" href="#contact">
+            Contact Me <span>↗</span>
+          </a>
         </div>
       </div>
-      <div className="scroll-cue">
-        <span>SCROLL</span>
-        <span className="scroll-line"></span>
+      <div class="hero__visual reveal" aria-label="Abstract visual composition">
+        <div class="hero__visual-top">
+          <span>01 / 01</span>
+          <span class="hero__status">
+            <i></i> designing
+          </span>
+        </div>
+        <div class="hero__visual-grid"></div>
+        <div class="hero__visual-note">
+          THOUGHTFUL
+          <br />
+          DIGITAL
+          <br />
+          EXPERIENCES
+        </div>
+        <div class="hero__visual-orbit"></div>
+      </div>
+      <div class="hero__scroll">
+        <span>SCROLL TO EXPLORE</span>
+        <i></i>
       </div>
     </section>
   );

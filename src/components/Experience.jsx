@@ -2,27 +2,33 @@ import { experience } from "../data/portfolioData.js";
 
 const Experience = () => {
   return (
-    <section id="experience">
-      <div className="wrap">
-        <div className="section-head fade-in">
-          <div className="eyebrow">Experience</div>
-          <h2>Where the work has taken me.</h2>
-        </div>
-        <div className="timeline fade-in">
-          {experience.map((item) => (
-            <div className="t-item" key={item.period}>
-              <div className="t-period">{item.period}</div>
-              <h3>
-                {item.role}
-                <br />
-                <span className="t-org">
-                  <strong>{item.org}</strong>
-                </span>
-              </h3>
+    <section
+      class="experience section-grid section"
+      id="experience"
+      aria-labelledby="experience-title"
+    >
+      <div class="section-marker">
+        <span>04</span>
+        <span>EXPERIENCE</span>
+      </div>
+      <div class="experience__heading reveal">
+        <p class="section-kicker">WHERE THE WORK HAS TAKEN ME.</p>
+        <h2 id="experience-title">
+          Selected <em>chapters.</em>
+        </h2>
+      </div>
+
+      <div class="timeline reveal">
+        {experience.map((item) => (
+          <article class="timeline__item" key={`${item.org}-${item.period}`}>
+            <div class="timeline__date">{item.period}</div>
+            <div class="timeline__body">
+              <h3>{item.role}</h3>
+              <p class="timeline__company">{item.org}</p>
               <p>{item.description}</p>
             </div>
-          ))}
-        </div>
+          </article>
+        ))}
       </div>
     </section>
   );

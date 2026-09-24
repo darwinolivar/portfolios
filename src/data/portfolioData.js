@@ -145,18 +145,6 @@ export const skillGroups = [
       "CodeIgniter",
     ],
   },
-  {
-    title: "Tools",
-    items: [
-      "Git",
-      "Azure",
-      "GitHub",
-      "Claude AI",
-      "VIDA AI",
-      "CoPilot",
-      "ChatGPT",
-    ],
-  },
 ];
 
 export const experience = [
@@ -228,3 +216,12 @@ export const contactLinks = [
     external: true,
   },
 ];
+
+export const contactContent = {
+  kicker: "HAVE A PROJECT IN MIND OR AN OPPORTUNITY TO DISCUSS?",
+  titleBefore: "Let's create something ",
+  titleAccent: "meaningful",
+  titleAfter: " together.",
+  description:
+    "Whether it's a full product build, a design system, or a single tricky interface — I'd love to hear about it.",
+};
